@@ -1,0 +1,33 @@
+<html>
+<head>
+  <title>Skincare Tracking</title>
+</head>
+<body>
+ 
+    <h1>Skincare Tagged for Tracking</h1>
+    
+    {% for row in rows_deploy %}
+    <p>skin: 
+       <b>{{row["ITEM_NAME ID"]}}</b> | 
+       {{row["ITEM_BRAND ID"]}} | 
+        {{ row["ITEM_PRICE"]}} | 
+       {{row['ITEM_IMG']}}	| 
+       {{row["ITEM_STATUES"]}} |
+        {{ row["YEAR"]}} |
+       {{row['MONTH']}}	
+    </p>
+    {% endfor %}
+
+
+    <h1>Connect Information</h1>
+    
+    {% for row in rows_status %}
+    <p>skin: 
+       <b>{{row["priceID"]}}</b> | 
+       {{row["title"]}} | 
+        {{ row["stars"]}} | 
+       {{row['vote']}}	| 
+    </p>
+    {% endfor %}
+</body>
+</html>
