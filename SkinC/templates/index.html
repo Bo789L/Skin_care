@@ -8,10 +8,10 @@
     
     {% for row in rows_deploy %}
     <p>skin: 
-       <b>{{row["ITEM_NAME ID"]}}</b> | 
-       {{row["ITEM_BRAND ID"]}} | 
+       <b>{{row["ITEM_NAME"]}}</b> | 
+       {{row["ITEM_BRAND"]}} | 
         {{ row["ITEM_PRICE"]}} | 
-       {{row['ITEM_IMG']}}	| 
+       {{row['CATEGORY']}}	| 
        {{row["ITEM_STATUES"]}} |
         {{ row["YEAR"]}} |
        {{row['MONTH']}}	
@@ -23,7 +23,7 @@
     
     {% for row in rows_status %}
     <p>skin: 
-       <b>{{row["priceID"]}}</b> | 
+       <b>{{row["price"]}}</b> | 
        {{row["title"]}} | 
         {{ row["stars"]}} | 
        {{row['vote']}}	| 
